@@ -1,13 +1,41 @@
 <!doctype html>
-<html>
+<html class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./dist/style.css" rel="stylesheet">
-</head>
-<body>
-  <div class="bg-red-500 text-center justify-center h-56">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="./dist/style.css" rel="stylesheet">
 
+  <title>Mortgage repayment calculator | Frontend Mentor</title>
+</head>
+<body class=" bg-green-100 flex justify-center items-center h-screen w-full">
+  <div  class=" flex  bg-white h-96 w-10/12  rounded-xl ">
+<div id="left" class="flex flex-col w-1/2 px-6 py-4 ">
+<div class="flex w-full justify-between">
+  <h1>
+    Mortgage Calculator
+  </h1>
+<a href="">Clear All</a>
+</div>
+<form action=""> 
+  <div>
+  
+  <label for="mortage_amount">Mortgage Amount</label>
+<input type="text" class="border-solid border-lime-500 border-2">
+</div>
+</form>
+
+</div>
+
+<!-- Results section -->
+
+<div class="w-1/2 bg-dark-blue rounded-r-xl rounded-bl-3xl " id="results">
+  <div id="empty" class="flex flex-col justify-center items-center h-full text-center px-4">
+<img src="./assets/images/illustration-empty.svg" alt="">
+<h2 class="text-white">Results shown here</h2>
+<p class="text-gray-300 text-xs">Complete the form and click "calculate repayments" to see whats your monthly repayments would be</p>
+  </div>
+</div>
 <div>
 </body>
 </html>
