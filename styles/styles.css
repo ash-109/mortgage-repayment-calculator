@@ -5,5 +5,15 @@
 .bg-dark-blue{
     background-color: rgb(19, 48, 64);
 }
+.text-dark-blue{
+    color: rgb(19, 48, 64);
+}
+.rounded-bl-7xl{
+border-bottom-left-radius: 48px;
+}
+input{
+    border: 2px grey solid;
+    width: 100%;
+}
 
 /* npx tailwindcss -i ./styles/styles.css -o ./dist/style.css --watch */
