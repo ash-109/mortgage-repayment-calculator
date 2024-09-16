@@ -11,38 +11,41 @@
 </head>
 
 <body class=" bg-green-100 flex justify-center items-center h-screen w-full">
-  <div class=" flex  bg-white h-96 w-1/2  rounded-xl ">
-    <div id="left" class="flex flex-col w-1/2 px-6 py-4 ">
-      <div class="flex w-full justify-between">
+  <div class=" flex  bg-white h-[30rem] w-1/2 rounded-xl ">
+    <div id="left" class="flex flex-col w-1/2 px-6 py-4">
+      <div class="flex w-full justify-between my-6">
         <h1 class="text-dark-blue font-bold">
           Mortgage Calculator
         </h1>
         <a href="">Clear All</a>
       </div>
       <form action="">
-        <div class="mortage_amount flex flex-col  <label for=" mortage_amount">Mortgage Amount</label>
-          <input type="text" class="">
+        <div class="mortage_amount mb-5"> 
+           <label for="mortage_amount" class="text-custom-grey font-medium block mb-2" >Mortgage Amount</label>
+           
+          <input type="text" class=" border-custom-grey rounded-md p-2">
         </div>
-        <div id="mortage_infos" class=" flex  justify-between w-full gap-4" >
+        <div id="mortage_infos" class=" flex  justify-between w-full gap-4 mb-3" >
           <div class="">
-            <label for="mortage_term">Mortage Term</label>
-            <input type="number" id="mortage_term">
+            <label for="mortage_term" class="text-custom-grey font-medium block mb-2">Mortage Term</label>
+            <input type="number" min="5" id="mortage_term" class="border-custom-grey rounded-md p-2">
           </div>
           <div class="">
-            <label for="interest_rate">Interest Rate</label>
-            <input type="number" name="" id="interest_rate">
+            <label for="interest_rate" class="text-custom-grey font-medium block mb-2">Interest Rate</label>
+            <input type="number" name="" id="interest_rate" class="border-custom-grey rounded-md p-2">
           </div>
         </div>
         <div class="mortage_type">
-          <div class="flex ">
+          <p>Mortage type</p>
+          <div class="flex border-1 border-solid border-black">
           <input type="radio" id="repayment"  value="repayment" />
           <label for="repayment">Repayment</label>
           </div>
-          <div class="flex " >
+          <div class="flex border-gray-700 border-solid border-1">
           <input type="radio" id="interest_only" value="interest_only" />
-          <label for="interest_only">Interest Only</label></div>
+          <label for="interest_only" class="">Interest Only</label></div>
         </div>
-        <button type="submit" class="flex bg-lime-500 py-3 px-6 rounded-[50px]" id="btn_submit"> <img src="./assets/images/icon-calculator.svg" alt=""> Calculate Repayments</button>
+        <button type="submit" class="flex justify-between gap-4 bg-custom-green py-3 px-6 rounded-[50px] text-custom-dark-blue" id="btn_submit"> <img src="./assets/images/icon-calculator.svg" alt=""> Calculate Repayments</button>
       </form>
 
     </div>

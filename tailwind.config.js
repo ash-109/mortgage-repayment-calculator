@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+       'custom-green': 'rgb(216, 219, 47)',
+       'custom-dark-blue' :'rgb(19, 48, 64)',
+       'custom-grey':'rgb(127 143 149)'
+      }
+    },
   },
   plugins: [],
 }
