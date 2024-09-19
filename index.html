@@ -54,7 +54,9 @@
         </div>
         <button type="submit"
           class="flex justify-between gap-4 bg-custom-green py-3 px-6 rounded-[50px] text-custom-dark-blue font-medium "
-          id="btn_submit"> <img src="./assets/images/icon-calculator.svg" alt=""> Calculate Repayments</button>
+          id="btn_submit"
+          > 
+          <img src="./assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
       </form>
 
     </div>
@@ -63,24 +65,24 @@
 
     <div class="w-1/2 bg-custom-dark-blue rounded-r-xl rounded-bl-7xl " id="results">
       <!---------- Empty ---------->
-      <div id="empty" class="flex flex-col justify-center items-center h-full text-center px-4">
+      <!-- <div id="empty" class="flex flex-col justify-center items-center h-full text-center px-4">
         <img src="./assets/images/illustration-empty.svg" alt="">
         <h2 class="text-white">Results shown here</h2>
         <p class="text-gray-300 text-xs">Complete the form and click "calculate repayments" to see whats your monthly
           repayments would be</p>
-      </div>
+      </div> -->
 
 <!---------- Completed ---------->
-    <div id="completed">
+    <div id="completed" class="px-8 py-10 ">
       
-      <h2 class="text-white">Your results</h2>
-      <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
-<div>
-  <p>Your monthly repayments</p>
-  <p>Results</p>
-  <hr class="w-full h-1 bg-custom-grey">
-  <p>Total you'll repay over the team</p>
-  <p>results2</p>
+      <h2 class="text-white font-medium mb-2.5">Your results</h2>
+      <p class="text-gray-400 text-[0.8rem] font-medium mb-5">Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
+<div class="bg-custom-darker-blue-2 border-t-custom-green border-t-4 rounded-md px-6 py-8 mt-10">
+  <p class="text-gray-400 mb-3" >Your monthly repayments</p>
+  <p class="text-custom-green font-medium text-5xl mb-8">£ 1,797.74</p>
+  <hr class="w-full h-[0.8px] mb-8 border-none bg-custom-grey">
+  <p class="text-gray-400 mb-2" >Total you'll repay over the team</p>
+  <p class="text-white text-2xl font-medium">£539,322.94</p>
 </div>
     </div>
 
