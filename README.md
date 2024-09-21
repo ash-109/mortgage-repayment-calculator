@@ -1,6 +1,7 @@
 # Frontend Mentor - Mortgage repayment calculator
 
-![Design preview for the Mortgage repayment calculator coding challenge](./design/desktop-design-empty.jpg,./design/preview.jpg)
+![](./design/desktop-design-empty.jpg)
+![Design preview for the Mortgage repayment calculator coding challenge](./design/preview.jpg)
 
 ## Welcome! 👋
 
