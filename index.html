@@ -13,13 +13,15 @@
 <body class=" bg-green-100 flex justify-center items-center h-screen w-full">
   <div class=" flex  bg-white h-[34rem] w-1/2 rounded-xl">
     <div id="left" class="flex flex-col w-1/2 px-8 py-6">
+            <form action="">
       <div class="flex w-full justify-between mb-6 mt-4">
         <h1 class="text-custom-dark-blue font-bold">
           Mortgage Calculator
-        </h1>
-        <button type="reset" id="btn_clear" class="underline text-custom-grey hover:text-custom-dark-blue font-medium">Clear All</button>
+        </h1> 
+        <input type="reset" value="Clear All"
+        class="underline text-custom-grey hover:text-custom-dark-blue font-medium">
       </div>
-      <form action="">
+        
         <div class="mortgage_amount mb-5 ">
           <label for="mortgage_amount" class="text-custom-grey font-medium block mb-2  ">Mortgage Amount</label>
 <div class="relative flex border-custom-grey border-2 rounded-md overflow-hidden active:border-black active:border-2">
@@ -42,11 +44,11 @@
         <div class="mortgage_type flex flex-col gap-3 mb-10">
           <p class="text-custom-grey font-medium">Mortgage type</p>
           <div class="flex gap-4 items-center border-[2px] border-custom-grey rounded-md p-2 hover:border-custom-green ">
-            <input type="radio" id="repayment" value="repayment" />
+            <input type="radio" id="repayment" name="option" value="repayment" />
             <label for="repayment" class="text-custom-dark-blue font-medium block w-full">Repayment</label>
           </div>
           <div class="flex gap-4 border-[2px] border-custom-grey rounded-md p-2 hover:border-custom-green ">
-            <input type="radio" id="interest_only" value="interest_only" />
+            <input type="radio" id="interest_only" name="option" value="interest_only" />
             <label for="interest_only" class="text-custom-dark-blue font-medium block w-full checked:border-custom-green checked:bg-custom-green">Interest Only</label>
           </div>
         </div>
